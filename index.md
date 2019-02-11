@@ -9,8 +9,9 @@
 - Build daily habits
 - Data analysis with Python
 
-```markdown
-#Play Rock, Paper, Scissors against CPU
+###### 2/9 - Play Rock, Paper, Scissors against CPU 
+- Else, elif, if statements
+```
 import random
 
 options = ['Rock', 'Paper', 'Scissors']
@@ -54,7 +55,9 @@ while True:
         print("Goodbye")
         break
 ```
-- Exercise from CS50 class to create "super mario stairs" in text
+###### 2/10 - Exercise from CS50 class to create "super mario stairs" in text
+- While loop
+- Functions
 ```
 #define function to create stairs
 def hashmaker(x):
