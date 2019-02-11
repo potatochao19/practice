@@ -1,37 +1,56 @@
-## Welcome to GitHub Pages
+## Hello
+### Basics
+- No prior knowledge of Python
+- Novice in SQL
+- Done - Cory Schafer intro to python videos and OOP videos
+- In progress - edx CS50 Course (starting week 2)
 
-You can use the [editor on GitHub](https://github.com/potatochao19/practice/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Overall Goals
+- Build daily habits
+- Data analysis with Python
 
 ```markdown
-Syntax highlighted code block
+#Play Rock, Paper, Scissors against CPU
+import random
 
-# Header 1
-## Header 2
-### Header 3
+options = ['Rock', 'Paper', 'Scissors']
+welcome_str = "Let's play! Your options are: "
+print(welcome_str +",".join(options))
 
-- Bulleted
-- List
+#game logic implementation
+def playgame(wincount):
+    print('playing to ' + str(wincount))
+    cpu_score = 0
+    player_score = 0
 
-1. Numbered
-2. List
+    while cpu_score < wincount and player_score < wincount:
+        cpu_choice = random.choice(options)
+        player_choice = input("Type an option.")
+        if player_choice not in options:
+            print("Invalid. Try again!")
+        else:
+            #print("{0} is cpu choice, and {1} is your choice.".format(cpu_choice,player_choice))
+            if cpu_choice == player_choice:
+                print("Draw - No one scores")
+            elif (cpu_choice =="Scissors" and player_choice =="Paper") or (cpu_choice =="Paper" and player_choice =="Rock") or (cpu_choice == "Rock" and player_choice =="Scissors"):
+                print("CPU Wins")
+                cpu_score = cpu_score + 1
+            else:
+                print("You win")
+                player_score = player_score + 1
 
-**Bold** and _Italic_ and `Code` text
+    return player_score == wincount
 
-[Link](url) and ![Image](src)
+while True:
+    num_times = input("How many rounds would you like to play? Enter number")
+    player_won = playgame(int(num_times))
+
+    if player_won:
+        print("You win!")
+    else:
+        print("CPU wins :(")
+    play_again = input("Play again? (y/n)")
+    if play_again == "n":
+        print("Goodbye")
+        break
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/potatochao19/practice/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
