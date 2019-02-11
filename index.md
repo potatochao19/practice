@@ -54,3 +54,36 @@ while True:
         print("Goodbye")
         break
 ```
+- Exercise from CS50 class to create "super mario stairs" in text
+```
+#define function to create stairs
+def hashmaker(x):
+    res = ""
+    for i in range(1,x+1):
+        res = res + "#"
+    return res
+
+#define function to right-align steps
+def indentmaker(y):
+    res = ""
+    for i in range(1,y):
+        res = res + " "
+    return res
+
+#prompt user to pick stair height 1 to 8
+pick = int(input("Pick a number"))
+while True:
+    if pick < 1 or pick > 8:
+        pick = int(input("Try Again"))
+
+    else:
+        count = 0
+        countb = pick + 1
+        while count < pick:
+            count = count + 1
+            countb = countb - 1
+            str1 = indentmaker(countb)
+            str2 = hashmaker(count)
+            print(str1 + str2)
+        break
+```
