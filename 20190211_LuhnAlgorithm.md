@@ -1,6 +1,6 @@
 ## Luhn's check for credit card validity
 - Operators
-- Enumerate
+- Enumerate, Range functions
 - Looping through list
 
 #### Steps:
