@@ -1,14 +1,3 @@
-## Hello
-### Basics
-- No prior knowledge of Python
-- Novice in SQL
-- Done - Cory Schafer intro to python videos and OOP videos
-- In progress - edx CS50 Course (starting week 2)
-
-### Overall Goals
-- Build daily habits
-- Data analysis with Python
-
 ###### 2/9 - Play Rock, Paper, Scissors against CPU 
 - Else, elif, if statements
 ```
