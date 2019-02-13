@@ -23,7 +23,7 @@ Same as above, but starting from second to last number
 start_index = len(num_list) - 2
 (sum(num_list[start_index::-2]))
 ```
-Multiplying items in list and addiing digits of results
+Multiplying items in list and adding digits of results
 ```
 num_new = []
 for i in num_list:
@@ -38,7 +38,7 @@ Alternative solution - defining function to sum every other digit right to left:
 ```
 def customSum(n):
     s = 0
-    while n:#ask about this while n
+    while n:
         s += n % 10
         n //= 100
     return s
