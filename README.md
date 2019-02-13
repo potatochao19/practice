@@ -19,8 +19,3 @@ I have no prior python experience. I use SQL and data visualization tools for wo
 - Data analysis with Python
 
 Thanks!
-
-#### My other habits include...
-- Reading (Brandon Sanderson is a fave!)
-- Drawing https://www.instagram.com/potatoptty/
-- Cooking my way through Chrissy Teigens Cravings
