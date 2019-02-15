@@ -12,14 +12,21 @@ Ask user for text and number of places to shift by, and return encrypted message
 
 ```
 import string
+
+# Should rewrite using an array
+
 d1 = dict(zip(string.ascii_lowercase, range(1,27)))
 d2 = dict([[v,k] for k,v in d1.items()])
 
 t = input("What text message to encode? ")
-shift = int(input("How many letters to shift by? Enter number: "))
-
 text = t.lower()
 newstr = ""
+s = ""
+
+while not s.isdigit():
+    s = input("How many letters to shift by? Enter number: ")
+
+shift = int(s)
 
 for x in list(text):
     if x in (" ","?",",",":", ";","&","!"):
@@ -29,10 +36,10 @@ for x in list(text):
         if i < 27:
             newstr += d2[i]
         else:
-            while i > 26:
-                i -= 26
+            i %= 26
             newstr += d2[i]
 print(newstr)
+
 ```
 
 
