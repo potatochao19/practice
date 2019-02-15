@@ -1,5 +1,6 @@
 ## Caesar Cipher
 https://en.wikipedia.org/wiki/Caesar_cipher
+
 Ask user for text and number of places to shift by, and return encrypted message.
 
 - Dictionary methods
