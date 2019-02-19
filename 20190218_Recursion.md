@@ -1,4 +1,4 @@
-## Recursion 
+## Intro to Recursion 
 
 - Replace while loops
 - Build using base case, recursive case
