@@ -38,7 +38,6 @@ Recursion:
             n /= 2
             steps += 1
         else:
-            # if n is odd
             n = n * 3 + 1
             steps += 1
     return steps
@@ -47,14 +46,15 @@ Recursion:
    Recursion:
    ```
    def collatz(n):
-    # base case, where recursion stops
+ 
     if n == 1:
+        # base case, where recursion stops
         return 0
     elif n % 2 == 0:
-    # recursive case for even num
+        # recursive case for even num
         return 1 + collatz(n/2)
     else:
-    # recursive case for odd num
+        # recursive case for odd num
         return 1 + collatz(3*n+1)
    ```
  
