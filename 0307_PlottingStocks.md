@@ -58,5 +58,5 @@ plt.title('Daily High')
 
 plt.show()
 ```
-
+![Output](https://github.com/potatoptty/PracticeBlog/blob/master/0308img.png?raw=true)
 This works because the dates already line up, but have to figure out a way to index/match correct values to date.
