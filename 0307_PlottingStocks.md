@@ -52,7 +52,7 @@ ax2 = ax1.twinx()
 ax2.plot(date, aapl_stock,'c-',label='Apple')
 
 ax1.legend(loc='upper left')
-ax2.legend(loc='bottom left')
+ax2.legend(loc='upper right')
 plt.title('Daily High')
 
 
